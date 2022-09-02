@@ -28,10 +28,9 @@ Spectral Mixture kernel with 2 spectral mixtures has a significant improvement t
 In order to unify the expressions of kernels, equations of each kernel used in 
 GPFA are listed here.
 
-$$
-rbf kernel: \(k_{rbf}(t_{1},t_{2},\gamma) = exp\left (-\dfrac{(t_1-t_2)^2}{2\gamma}\right ) \)\\
-rational quadratic kernel: \(k_{RQ}(t_{1},t_{2},\alpha,\ell) = \left(1+\frac{(t_1-t_2)^{2}}{2\alpha \ell^{2}}\right)^{-\alpha}\) & \(\alpha \geq 0,\ell \geq 0\)\\
-$$
+$$ \text{rbf kernel: } \(k_{rbf}(t_{1},t_{2},\gamma) = exp\left (-\dfrac{(t_1-t_2)^2}{2\gamma}\right ) \)\\
+\text{rational quadratic kernel: }\(k_{RQ}(t_{1},t_{2},\alpha,\ell) = \left(1+\frac{(t_1-t_2)^{2}}{2\alpha \ell^{2}}\right)^{-\alpha}\) & \(\alpha \geq 0,\ell \geq 0\)\\
+
 
 ## additional visualization methods
 `GPFA_visualisation_addons` contains `plot_trajectories_vs_time`, which is developed in addition to `viziphant.gpfa.plot_trajectoires`.
