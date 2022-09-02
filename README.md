@@ -30,7 +30,7 @@ GPFA are listed here.
 
 $$ 
 \text{rbf kernel: } \(k_{rbf}(t_{1},t_{2},\gamma) = exp\left (-\dfrac{(t_1-t_2)^2}{2\gamma}\right ) \)\\
-\text{rational quadratic kernel: }\(k_{RQ}(t_{1},t_{2},\alpha,\ell) = \left(1+\frac{(t_1-t_2)^{2}}{2\alpha \ell^{2}}\right)^{-\alpha}\) & \(\alpha \geq 0,\ell \geq 0\)\\
+\text{rational quadratic kernel: }\(k_{RQ}(t_{1},t_{2},\alpha,\ell) = \left(1+\frac{(t_1-t_2)^{2}}{2\alpha \ell^{2}}\right)^{-\alpha}\)\\
 $$
 
 ## additional visualization methods
