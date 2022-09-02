@@ -1,0 +1,5 @@
+=======
+Kernels
+=======
+
+.. automodule:: elephant.kernels

@@ -1,0 +1,88 @@
+#########################################
+# Editor temporary/working/backup files #
+.#*
+[#]*#
+*~
+*$
+*.bak
+.coverage
+*.kdev4
+*.komodoproject
+.mr.developer.cfg
+nosetests.xml
+*.orig
+.project
+.pydevproject
+.settings
+*.tmp*
+.idea/
+venv/
+env/
+.pytest_cache/
+**/*/__pycache__
+
+# Compiled source #
+###################
+*.a
+*.com
+*.class
+*.dll
+*.exe
+*.mo
+*.o
+*.py[ocd]
+*.so
+
+# Python files #
+################
+# setup.py working directory
+build
+# other build directories
+bin
+parts
+var
+lib
+lib64
+# sphinx build directory
+doc/_build
+doc/reference/_toctree
+*.h5
+# setup.py dist directory
+dist
+sdist
+# Egg metadata
+*.egg-info
+*.egg
+*.EGG
+*.EGG-INFO
+eggs
+develop-eggs
+# tox testing tool
+.tox
+# Packages
+.installed.cfg
+pip-log.txt
+# coverage
+cover
+
+# OS generated files #
+######################
+.directory
+.gdb_history
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Things specific to this project #
+###################################
+# ignored folder for fast prototyping
+ignored/
+
+.ipynb_checkpoints/
+
+# data
+*.nix
+
+# neo logs
+**/logs

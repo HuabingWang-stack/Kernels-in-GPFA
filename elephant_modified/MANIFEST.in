@@ -1,0 +1,17 @@
+recursive-include elephant *.py
+include requirements/*
+include README.md
+include LICENSE.txt
+include CITATION.txt
+include elephant/VERSION
+include elephant/current_source_density_src/README.md
+include elephant/current_source_density_src/test_data.mat
+include elephant/spade_src/LICENSE
+include elephant/test/spike_extraction_test_data.txt
+recursive-include doc *
+prune doc/_build
+prune doc/tutorials/.ipynb_checkpoints
+prune doc/reference/toctree
+include doc/reference/toctree/kernels/*
+recursive-exclude * *.h5
+recursive-exclude * *~
