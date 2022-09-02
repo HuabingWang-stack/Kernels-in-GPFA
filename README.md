@@ -25,12 +25,12 @@ In terms of GPFA returned data log-likelihood,
 Spectral Mixture kernel with 2 spectral mixtures has a significant improvement than originally adopted rbf kernel. 
 
 ## math expressions of new kernels
+In order to unify the expressions of kernels, equations of each kernel used in 
+GPFA are listed here.
+
 $$
-\begin{tabular}{|c|}
-\hline
-\(k_{rbf}(t_{1},t_{2},\gamma) = exp\left (-\dfrac{(t_1-t_2)^2}{2\gamma}\right ) \)\\
-\hline
-\end{tabular}
+rbf kernel: \(k_{rbf}(t_{1},t_{2},\gamma) = exp\left (-\dfrac{(t_1-t_2)^2}{2\gamma}\right ) \)\\
+rational quadratic kernel: \(k_{RQ}(t_{1},t_{2},\alpha,\ell) = \left(1+\frac{(t_1-t_2)^{2}}{2\alpha \ell^{2}}\right)^{-\alpha}\) & \(\alpha \geq 0,\ell \geq 0\)\\
 $$
 
 ## additional visualization methods
