@@ -29,9 +29,9 @@ In order to unify the expressions of kernels, equations of each kernel used in
 GPFA are listed here.
 
 $$
-\text{rbf kernel: } k_{rbf}(t_{1},t_{2},\gamma) = exp\left (-\dfrac{(t_1-t_2)^2}{2\gamma}\right ) \\
+\text{rbf kernel: } \(k_{rbf}(t_{1},t_{2},\gamma) = exp\left (-\dfrac{(t_1-t_2)^2}{2\gamma}\right ) \) \\
 
-\text{rational quadratic kernel: } k_{rq}(t_{1},t_{2},\alpha,\ell) = \left(1+\frac{(t_1-t_2)^{2}}{2\alpha \ell^{2}}\right)^{-\alpha}\\
+\text{rational quadratic kernel: } \(k_{rq}(t_{1},t_{2},\alpha,\ell) = \left(1+\frac{(t_1-t_2)^{2}}{2\alpha \ell^{2}}\right)^{-\alpha} \)\\
 $$
 
 ## additional visualization methods
