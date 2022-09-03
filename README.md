@@ -12,9 +12,11 @@ Added Exponential, Triangular, Rational Quadratic, Matern, Spectral Mixture kern
 Parameters of new kernels are currently optimized by 2 gradient-free method: `Scipy.optimize.minimize` Powell mehthod and a built-in Bayeisian Optimization script.
 
 ## execution
-Kernel names are in short, specify kernel names in '{'rbf', 'tri', 'exp', 'rq', 'matern', 'sm','tri_times_rq', 'exp_times_rq', 'exp_times_tri'}' at parameter `covTpe`.
+Kernel names are in short, choose kernel in '{'rbf', 'tri', 'exp', 'rq', 'matern', 'sm','tri_times_rq', 'exp_times_rq', 'exp_times_tri'}' at parameter field `covTpe`.
 Specify optimization method at parameter `bo`. Default is False to use Powell method. Input a positive numbers will use Bayesian Optimization instead, the number will be iterations of Bayesian Optimisation.
-Example to use Spectral Mixture kernel, optimize its kernel parameter by  Bayesian Optimization in 50 iterations. Time binned in 20ms, extract trajectory to 3 dimensional space.
+
+
+The following example initialize GPFA with Spectral Mixture kernel, and optimize its kernel parameter by  Bayesian Optimization in 50 iterations. Time binned in 20ms, extract trajectory to 3 dimensional space.
 ```python
 gpfa_3dim_sm = Elephant.gpfa.GPFA(bin_size=20*pq.ms, x_dim=3,covType='sm',bo=50)
 gpfa_3dim_sm.fit(spiketrains)
@@ -80,13 +82,13 @@ The function invokes GPFA internally, parameter fields are nearly the same with 
 ```
 plot_trajectories_vs_time(spikeTrains,GPFA_kargs = {'x_dim':3, 'bin_size': 20 *pq.ms, 'covType' : 'sm', 'bo': False}, dimensions=[0, 1, 2])
 ```
-Example of plotted latent trajectory of the first experiment of natural images dataset.
+Example of plotted latent trajectory of the first experiment of `NaturalImages1.mat` dataset.
 ![alt text](./LatentTrajectories/NaturalImages1/sm/0_3d.png?raw=true)
 
 ## tutorials
 
 `kernels_inGPFA_tutorial.ipynb` has a detailed practice to perform this modified GPFA on the first 
-experiment of `NaturalImage1.mat` dataset. It compares the difference of extracted trajectories between rbf and spectral 
+experiment of `NaturalImages1.mat` dataset. It compares the difference of extracted trajectories between rbf and spectral 
 mixture kernel in part 1. Then it demonstrates the new plotting function in part 2, and shows the way to achieve multi-threading
 when running on a large dataset in part 3.
 
