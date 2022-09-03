@@ -19,14 +19,14 @@ gpfa_3dim_sm.fit(spiketrains)
 ```
 ## kernel performance benchmark
 The 9 kernels are benchmarked in neuroscience dataset collected from Salamander Retina Ganglion cells in `Spikes` directory
-data available at [link](https://datadryad.org/stash/dataset/doi:10.5061/dryad.4ch10). The results of GPFA when 
-adopting all types of kernels on this dataset is at a cloud storage at [link](https://www.dropbox.com/scl/fo/upo6z57eqlx0dilgymdsx/h?dl=0&rlkey=fe0or0kpz93km3oo96nldl3c6).
-In terms of GPFA returned data log-likelihood, 
-Spectral Mixture kernel with 2 spectral mixtures has a significant improvement than originally adopted rbf kernel. 
+data available at [link](https://datadryad.org/stash/dataset/doi:10.5061/dryad.4ch10). The benchmark results are at cloud storage [link](https://www.dropbox.com/scl/fo/upo6z57eqlx0dilgymdsx/h?dl=0&rlkey=fe0or0kpz93km3oo96nldl3c6),
+please refer to `README.md` file in directory Experiments Data for detail information of this benchmark result.
+In terms of data log-likelihood returned by GPFA model, 
+Spectral Mixture kernel with 2 spectral mixtures has a significant improvement over than originally adopted rbf kernel. 
 
 ## math expressions of kernels
 In order to unify the expressions of kernels, equations of each kernel used in 
-GPFA are listed here.
+the Elephant GPFA python package are listed here:
 
 $$
 \text{rbf kernel: } k_{rbf}(t_{1},t_{2},\gamma) = exp\left (-\dfrac{(t_1-t_2)^2}{2\gamma}\right ) 
@@ -78,3 +78,13 @@ plot_trajectories_vs_time(spikeTrains,GPFA_kargs = {'x_dim':3, 'bin_size': 20 *p
 ```
 Example of plotted latent trajectory of the first experiment of natural images dataset.
 ![alt text](./LatentTrajectories/NaturalImages1/sm/0_3d.png?raw=true)
+
+## tutorials
+
+`kernels_inGPFA_tutorial.ipynb` has a detailed practice to perform this modified GPFA on the first 
+experiment of `NaturalImage1.mat` dataset. It compares the difference of extracted trajectories between rbf and spectral 
+mixture kernel in part 1. Then it demonstrates the new plotting function in part 2, and shows the way to achieve multi-threading
+when running on a large dataset in part 3.
+
+`analyze_kernels_in_synthetic_data.ipynb` compares the smoothness property of the 9 kernels on synthetic data with 
+pre-defined harmonic oscillator latent dynamics.
