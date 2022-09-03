@@ -17,12 +17,6 @@ Example to use Spectral Mixture kernel, optimize its kernel parameter by  Bayesi
 gpfa_3dim_sm = Elephant.gpfa.GPFA(bin_size=20*pq.ms, x_dim=3,covType='sm',bo=50)
 gpfa_3dim_sm.fit(spiketrains)
 ```
-## kernel performance benchmark
-The 9 kernels are benchmarked in neuroscience dataset collected from Salamander Retina Ganglion cells in `Spikes` directory
-data available at [link](https://datadryad.org/stash/dataset/doi:10.5061/dryad.4ch10). The benchmark results are at cloud storage [link](https://www.dropbox.com/scl/fo/upo6z57eqlx0dilgymdsx/h?dl=0&rlkey=fe0or0kpz93km3oo96nldl3c6),
-please refer to `README.md` file in directory Experiments Data for detail information of this benchmark result.
-In terms of data log-likelihood returned by GPFA model, 
-Spectral Mixture kernel with 2 spectral mixtures has a significant improvement over than originally adopted rbf kernel. 
 
 ## math expressions of kernels
 In order to unify the expressions of kernels, equations of each kernel used in 
@@ -69,6 +63,14 @@ $$
     0, & |t_{1}-t_{2}|  \geq \sqrt{6}\sigma
     \end{cases}
 $$
+
+## kernel performance benchmark
+The 9 kernels are benchmarked in neuroscience dataset collected from Salamander Retina Ganglion cells in `Spikes` directory
+data available at [link](https://datadryad.org/stash/dataset/doi:10.5061/dryad.4ch10). The benchmark results are at cloud storage [link](https://www.dropbox.com/scl/fo/upo6z57eqlx0dilgymdsx/h?dl=0&rlkey=fe0or0kpz93km3oo96nldl3c6),
+please refer to `README.md` file in directory Experiments Data for detail information of this benchmark result.
+In terms of data log-likelihood returned by GPFA model, 
+Spectral Mixture kernel with 2 spectral mixtures has a significant improvement over than originally adopted rbf kernel. 
+
 ## additional visualization methods
 `GPFA_visualisation_addons` contains `plot_trajectories_vs_time`, which is developed in addition to `viziphant.gpfa.plot_trajectoires`.
 This function emphasize temporal order between neural states by adopting gradient color in plotting single trail latent trajectories. 
