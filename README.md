@@ -51,20 +51,21 @@ $$
 $$
 \text{triangular kernel: } k_{tri}(t_{1},t_{2},\sigma) = \begin{cases}\frac{1}{\sqrt{6}\sigma}\left(1-\frac{|t_{1}-t_{2}|}{\sqrt{6}\sigma}\right),  & |t_{1}-t_{2}|  < \sqrt{6}\sigma\\
     0, & |t_{1}-t_{2}|  \geq \sqrt{6}\sigma
+    \end{cases}
 $$
 
 $$
-\text{triangular times rational quadratic kernel: } k_{tri_times_rq}(t_{1},t_{2},\sigma,\alpha,\ell) = \begin{cases}\frac{1}{\sqrt{6}\sigma}\left(1-\frac{|t_{1}-t_{2}|}{\sqrt{6}\sigma}\right)\left(1+\frac{(t_1-t_2)^{2}}{2\alpha \ell^{2}}\right)^{-\alpha},  & |t_{1}-t_{2}|  < \sqrt{6}\sigma\\
+\text{triangular times rational quadratic kernel: } k_{tri\_times\_rq}(t_{1},t_{2},\sigma,\alpha,\ell) = \begin{cases}\frac{1}{\sqrt{6}\sigma}\left(1-\frac{|t_{1}-t_{2}|}{\sqrt{6}\sigma}\right)\left(1+\frac{(t_1-t_2)^{2}}{2\alpha \ell^{2}}\right)^{-\alpha},  & |t_{1}-t_{2}|  < \sqrt{6}\sigma\\
     0, & |t_{1}-t_{2}|  \geq \sqrt{6}\sigma
     \end{cases}
 $$
 
 $$
-\text{exponential times rational quadratic kernel: } k_{exp_times_rq}(t_{1},t_{2},\sigma,\alpha,\ell) = \exp\left(-\frac{|t_{1}-t_{2}|}{2\sigma^2}\right) \left(1+\frac{(t_1-t_2)^{2}}{2\alpha \ell^{2}}\right)^{-\alpha}
+\text{exponential times rational quadratic kernel: } k_{exp\_times\_rq}(t_{1},t_{2},\sigma,\alpha,\ell) = \exp\left(-\frac{|t_{1}-t_{2}|}{2\sigma^2}\right) \left(1+\frac{(t_1-t_2)^{2}}{2\alpha \ell^{2}}\right)^{-\alpha}
 $$
 
 $$
-\text{exponential times triangular kernel: } (k_{exp_times_tri}(t_{1},t_{2},\sigma_{e},\sigma_{t}) = \begin{cases} \exp\left(-\frac{|t_{1}-t_{2}|}{2\sigma_{e}^2}\right) \frac{1}{\sqrt{6}\sigma_{t}}\left(1-\frac{|t_{1}-t_{2}|}{\sqrt{6}\sigma_{t}}\right),  & |t_{1}-t_{2}|  < \sqrt{6}\sigma\\
+\text{exponential times triangular kernel: } k_{exp\_times\_tri}(t_{1},t_{2},\sigma_{e},\sigma_{t}) = \begin{cases} \exp\left(-\frac{|t_{1}-t_{2}|}{2\sigma_{e}^2}\right) \frac{1}{\sqrt{6}\sigma_{t}}\left(1-\frac{|t_{1}-t_{2}|}{\sqrt{6}\sigma_{t}}\right),  & |t_{1}-t_{2}|  < \sqrt{6}\sigma\\
     0, & |t_{1}-t_{2}|  \geq \sqrt{6}\sigma
     \end{cases}
 $$
