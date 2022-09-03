@@ -1,5 +1,7 @@
 # Kernels_in_GPFA
-Development of a 9 new kernels functions in Elephant GPFA python package. Original version at [link](https://github.com/NeuralEnsemble/elephant).
+This repository contains a modified version of Elephant python package where 9 new kernel functions are developed onto, and 2 
+tutorials to explain the properties of latent trajectories extracted by GPFA with new kernels. Original version of Elephant 
+at [link](https://github.com/NeuralEnsemble/elephant).
 
 ## installation
 To install package, go to 'elephant_modified' directory and execute `pip install -e.` in command line.
@@ -31,7 +33,7 @@ $$
 $$
 
 $$
-\text{matern kernel: } (k_{Matern}(t_{1},t_{2},\nu,\ell) = \frac{2^{1-\nu}}{\Gamma(\nu)} \left (\frac{\sqrt{2\nu}(t_{1}-t_{2})}{\ell}\right )^{\nu}K_{\nu}\left(\frac{\sqrt{2\nu}(t_1-t_2)}{\ell}\right)
+\text{matern kernel: } (k_{matern}(t_{1},t_{2},\nu,\ell) = \frac{2^{1-\nu}}{\Gamma(\nu)} \left (\frac{\sqrt{2\nu}(t_{1}-t_{2})}{\ell}\right )^{\nu}K_{\nu}\left(\frac{\sqrt{2\nu}(t_1-t_2)}{\ell}\right)
 $$
 
 $$
