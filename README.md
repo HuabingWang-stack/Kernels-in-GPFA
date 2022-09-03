@@ -13,8 +13,8 @@ Parameters of new kernels are currently optimized by 2 gradient-free method: `Sc
 Kernel names are in short, specify kernel names in '{'rbf', 'tri', 'exp', 'rq', 'matern', 'sm','tri_times_rq', 'exp_times_rq', 'exp_times_tri'}' at parameter `covTpe`.
 Specify optimization method at parameter `bo`. Default is False to use Powell method. Input a positive numbers will use Bayesian Optimization instead, the number will be iterations of Bayesian Optimisation.
 Example to use Spectral Mixture kernel, optimize its kernel parameter by  Bayesian Optimization in 50 iterations. Time binned in 20ms, extract trajectory to 3 dimensional space.
-```
-gpfa_3dim_sm = Elephant.gpfa.GPFA(bin_size=20*pq.ms, x_dim=3,covType='sm',bo=3)
+```python
+gpfa_3dim_sm = Elephant.gpfa.GPFA(bin_size=20*pq.ms, x_dim=3,covType='sm',bo=50)
 gpfa_3dim_sm.fit(spiketrains)
 ```
 ## kernel performance benchmark
