@@ -36,6 +36,38 @@ $$
 \text{rational quadratic kernel: } k_{rq}(t_{1},t_{2},\alpha,\ell) = \left(1+\frac{(t_1-t_2)^{2}}{2\alpha \ell^{2}}\right)^{-\alpha}
 $$
 
+$$
+\text{matern kernel: } (k_{Matern}(t_{1},t_{2},\nu,\ell) = \frac{2^{1-\nu}}{\Gamma(\nu)} \left (\frac{\sqrt{2\nu}(t_{1}-t_{2})}{\ell}\right )^{\nu}K_{\nu}\left(\frac{\sqrt{2\nu}(t_1-t_2)}{\ell}\right)
+$$
+
+$$
+\text{spectral mixture kernel: } k_{sm}(t_{1},t_{2},Q,w,\mu,\nu) = \sum_{q=1}^{Q} \exp \left(-2\pi^{2}(t_{1}-t_{2})^{2}\nu \right) \\cos \left(2\pi (t_{1}-t_{2}) \mu \right)
+$$
+
+$$
+\text{exponential kernel: } k_{exp}(t_{1},t_{2},\sigma) = \exp\left(-\frac{|t_{1}-t_{2}|}{2\sigma^2}\right)
+$$
+
+$$
+\text{triangular kernel: } k_{tri}(t_{1},t_{2},\sigma) = \begin{cases}\frac{1}{\sqrt{6}\sigma}\left(1-\frac{|t_{1}-t_{2}|}{\sqrt{6}\sigma}\right),  & |t_{1}-t_{2}|  < \sqrt{6}\sigma\\
+    0, & |t_{1}-t_{2}|  \geq \sqrt{6}\sigma
+$$
+
+$$
+\text{triangular times rational quadratic kernel: } k_{tri_times_rq}(t_{1},t_{2},\sigma,\alpha,\ell) = \begin{cases}\frac{1}{\sqrt{6}\sigma}\left(1-\frac{|t_{1}-t_{2}|}{\sqrt{6}\sigma}\right)\left(1+\frac{(t_1-t_2)^{2}}{2\alpha \ell^{2}}\right)^{-\alpha},  & |t_{1}-t_{2}|  < \sqrt{6}\sigma\\
+    0, & |t_{1}-t_{2}|  \geq \sqrt{6}\sigma
+    \end{cases}
+$$
+
+$$
+\text{exponential times rational quadratic kernel: } k_{exp_times_rq}(t_{1},t_{2},\sigma,\alpha,\ell) = \exp\left(-\frac{|t_{1}-t_{2}|}{2\sigma^2}\right) \left(1+\frac{(t_1-t_2)^{2}}{2\alpha \ell^{2}}\right)^{-\alpha}
+$$
+
+$$
+\text{exponential times triangular kernel: } (k_{exp_times_tri}(t_{1},t_{2},\sigma_{e},\sigma_{t}) = \begin{cases} \exp\left(-\frac{|t_{1}-t_{2}|}{2\sigma_{e}^2}\right) \frac{1}{\sqrt{6}\sigma_{t}}\left(1-\frac{|t_{1}-t_{2}|}{\sqrt{6}\sigma_{t}}\right),  & |t_{1}-t_{2}|  < \sqrt{6}\sigma\\
+    0, & |t_{1}-t_{2}|  \geq \sqrt{6}\sigma
+    \end{cases}
+$$
 ## additional visualization methods
 `GPFA_visualisation_addons` contains `plot_trajectories_vs_time`, which is developed in addition to `viziphant.gpfa.plot_trajectoires`.
 This function emphasize temporal order between neural states by adopting gradient color in plotting single trail latent trajectories. 
