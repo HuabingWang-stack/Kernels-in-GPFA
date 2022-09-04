@@ -35,7 +35,7 @@ $$
 $$
 
 $$
-\text{matern kernel: } (k_{matern}(t_{1},t_{2},\nu,\ell) = \frac{2^{1-\nu}}{\Gamma(\nu)} \left (\frac{\sqrt{2\nu}(t_{1}-t_{2})}{\ell}\right )^{\nu}K_{\nu}\left(\frac{\sqrt{2\nu}(t_1-t_2)}{\ell}\right)
+\text{matern kernel: } k_{matern}(t_{1},t_{2},\nu,\ell) = \frac{2^{1-\nu}}{\Gamma(\nu)} \left (\frac{\sqrt{2\nu}(t_{1}-t_{2})}{\ell}\right )^{\nu}K_{\nu}\left(\frac{\sqrt{2\nu}(t_1-t_2)}{\ell}\right)
 $$
 
 $$
