@@ -79,7 +79,7 @@ Spectral Mixture kernel with 2 spectral mixtures has a significant improvement o
 `GPFA_visualisation_addons` contains `plot_trajectories_vs_time`, which is developed in addition to `viziphant.gpfa.plot_trajectoires`.
 This function emphasize temporal order between neural states by adopting gradient color in plotting single trail latent trajectories. 
 The function invokes GPFA internally, parameter fields are nearly the same with `viziphant.gpfa.plot_trajectoires`. Example to use this function to extract latent trajectories to 3D.
-```
+```python
 plot_trajectories_vs_time(spikeTrains,GPFA_kargs = {'x_dim':3, 'bin_size': 20 *pq.ms, 'covType' : 'sm', 'bo': False}, dimensions=[0, 1, 2])
 ```
 Example of plotted latent trajectory of the first experiment of `NaturalImages1.mat` dataset.
