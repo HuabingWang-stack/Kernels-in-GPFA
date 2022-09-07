@@ -4,7 +4,7 @@ tutorials to explain the properties of latent trajectories extracted by GPFA wit
 at [link](https://github.com/NeuralEnsemble/elephant).
 
 ## installation
-To install package, go to 'elephant_gpfa_extended_kernels' directory and execute `pip install -e.` in command line.
+To install package, go to `elephant_gpfa_extended_kernels` directory and execute `pip install -e.` in command line.
 
 ## new features added to Elephant GPFA
 
