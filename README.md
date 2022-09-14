@@ -1,10 +1,10 @@
 # Kernels in GPFA
 This repository contains a modified version of Elephant python package where 9 new kernel functions are developed onto, and 2 
-tutorials to explain the properties of latent trajectories extracted by GPFA with new kernels. Original version of Elephant 
+tutorials to explain the properties of latent trajectories extracted by Gaussian Process Factor Analysis(GPFA) with new kernels. Original version of Elephant 
 at [link](https://github.com/NeuralEnsemble/elephant).
 
 ## installation
-To install package, go to `elephant_gpfa_extended_kernels` directory and execute `pip install -e.` in command line.
+To install package, go to `elephant_gpfa_extker` directory and execute `pip install -e.` in command line.
 
 ## new features added to Elephant GPFA
 
